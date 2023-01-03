@@ -1,12 +1,21 @@
-<div class="cards <%#= @api_color %>">
+<div class="cards">
   
   <div class="card">
-    <h2>California Air Quality Index <%= @final_output %> </h2>
+    <h2>California Air Quality Index: <%= @final_output %> </h2>
+    <div class="box  <%= @api_color %>"></div>
     <p><%= @api_description %></p>
   </div>
-  
-  <div class="card">
-    <%= render 'navbar'%>
+
+  <div class="zip">
+    <div>
+      <%= render 'navbar'%>
+    </div>
+    <div>
+      <h3>For example</h3>
+      <p>Alaska 99501</p>
+    </div>
   </div>
+
+
 </div>
 <%= render 'rules' %>

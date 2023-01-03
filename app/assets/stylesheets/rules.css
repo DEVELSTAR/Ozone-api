@@ -25,13 +25,3 @@
 	margin: auto;
 	width: 90%;
 }
-.cards{
-	border: 2px solid red;
-	display: flex;
-	width: 900px;
-	margin: auto;
-	margin-top: 5vh;
-}
-.card{
-/*	border: 2px solid red;*/
-}

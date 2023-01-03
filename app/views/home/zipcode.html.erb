@@ -1,11 +1,21 @@
 <div class="cards">
   <div class="card">
-    <h2>Searched Air Quality Index <%= @final_output %> </h2>
-    <p><%= @api_description %></p>
-    <div class="box  <%= @api_color %>"></div>
+    <% if @output.empty? %>
+      <h2>Sorry! This zip code is not available.</h2>
+    <% else %>
+      <h2>Searched Air Quality Index: <%= @final_output %></h2>
+      <div class="box  <%= @api_color %>"></div>
+      <div><%= @api_description %></div>
+    <% end %>
   </div>
-  <div class="card">
-    <%= render 'navbar'%>
+  <div class="zip">
+    <div>
+      <%= render 'navbar'%>
+    </div>
+    <div>
+      <h3>For example</h3>
+      <p>Alaska 99501</p>
+    </div>
   </div>
 </div>
 

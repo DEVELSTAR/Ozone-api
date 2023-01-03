@@ -39,3 +39,20 @@
 .gray{
     background-color: gray;
 }
+.form{
+/*    border: 2px solid red;*/
+    margin-top: 2vh;
+}
+input{
+    height: 20px;
+
+}
+input[type="text"]{
+    height: 25px;
+}
+input[type="submit"]{
+    height: 30px;
+    color: white;
+    background-color: green;
+
+}
